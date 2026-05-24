@@ -12,7 +12,7 @@ BG        = "#1e1e2e"
 BG2       = "#13131f"
 PANEL     = "#252535"
 ACCENT    = "#7c6af7"
-ACCENT2   = "#ff6b9d"
+ACCENT2   = "#16a32e"
 FG        = "#e0e0f0"
 FG2       = "#9999bb"
 ENTRY_BG  = "#2a2a40"
@@ -102,12 +102,9 @@ class App(tk.Tk):
         # Título superior
         header = tk.Frame(self, bg=BG, height=50)
         header.pack(fill="x", padx=0, pady=0)
-        tk.Label(header, text="∫  INTEGRACIÓN NUMÉRICA",
+        tk.Label(header, text="∫ KIRBY | INTEGRACIÓN NUMÉRICA",
                  bg=BG, fg=ACCENT2,
                  font=("Consolas", 16, "bold")).pack(side="left", padx=20, pady=10)
-        tk.Label(header, text="Sumas Inferior · Superior · Riemann · Integral Exacta",
-                 bg=BG, fg=FG2,
-                 font=("Consolas", 9)).pack(side="left", padx=5, pady=10)
 
         tk.Frame(self, bg="#333355", height=1).pack(fill="x")
 
